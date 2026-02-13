@@ -21,6 +21,11 @@
                 Console.WriteLine("Invalid number input.");
             }
 
+            Console.Write("Please enter a number: ");
+            string num1= Console.ReadLine();
+
+            Console.Write("Please enter another number: ");
+            string num2 = Console.ReadLine();
         }
         static void DisplayMenu()
         {
