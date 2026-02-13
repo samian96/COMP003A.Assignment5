@@ -20,23 +20,25 @@ namespace COMP003A.Assignment5
                 Console.Write("Please enter your age: ");
                 string age = Console.ReadLine();
 
+                Console.Write("Please enter a number: ");
+                string num1 = Console.ReadLine();
+
+
                 if (int.TryParse(age, out int inputAge))
                 {
                     UserInput(name, inputAge);
+
+                    int finalVal = DoubleCalculation(mainValue);
+
+                    Console.WriteLine($"Original Value: {mainValue}.");
+
+                    Console.WriteLine($"Original Value doubled: {finalVal}");
                 }
                 else
                 {
                     Console.WriteLine("Invalid number input.");
                 }
 
-                Console.Write("Please enter a number: ");
-                string num1 = Console.ReadLine();
-
-                int finalVal = DoubleCalculation(mainValue);
-
-                Console.WriteLine($"Original Value: {mainValue}.");
-
-                Console.WriteLine($"Original Value doubled: {finalVal}");
             } while (running == true);
 
             Console.WriteLine("Program ended");
