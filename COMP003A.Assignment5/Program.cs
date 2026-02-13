@@ -14,7 +14,7 @@
 
             if (int.TryParse(age, out int inputAge))
             {
-                UserInput(inputName, inputAge);
+                UserInput(name, inputAge);
             }
             else
             {
