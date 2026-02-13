@@ -16,12 +16,15 @@ namespace COMP003A.Assignment5
 
                 Console.Write("Please enter your name: ");
                 string name = Console.ReadLine();
+                Console.WriteLine("\n");
 
                 Console.Write("Please enter your age: ");
                 string age = Console.ReadLine();
+                Console.WriteLine("\n");
 
                 Console.Write("Please enter a number: ");
                 string num1 = Console.ReadLine();
+                Console.WriteLine("\n");
 
 
                 if (int.TryParse(age, out int inputAge))
@@ -31,12 +34,15 @@ namespace COMP003A.Assignment5
                     int finalVal = DoubleCalculation(mainValue);
 
                     Console.WriteLine($"Original Value: {mainValue}.");
+                    Console.WriteLine("\n");
 
                     Console.WriteLine($"Original Value doubled: {finalVal}");
+                    Console.WriteLine("\n");
                 }
                 else
                 {
                     Console.WriteLine("Invalid number input.");
+                    Console.WriteLine("\n");
                 }
 
             } while (running == true);
