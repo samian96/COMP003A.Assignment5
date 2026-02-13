@@ -26,6 +26,8 @@
             Console.Write("Please enter a number: ");
             string num1= Console.ReadLine();
 
+            int finalVal = DoubleCalculation(mainValue);
+
         }
         static void DisplayMenu()
         {
@@ -37,7 +39,9 @@
         }
         static int DoubleCalculation (int inputNum1)
         {
+            int result = inputNum1 * 2;
 
+            return result;
         }
     }
 }
