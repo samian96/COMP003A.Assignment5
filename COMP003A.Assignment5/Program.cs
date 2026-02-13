@@ -28,6 +28,10 @@
 
             int finalVal = DoubleCalculation(mainValue);
 
+            Console.Write($"Original Value: {mainValue}.");
+
+            Console.Write($"Original Value times 2: {finalVal}");
+
         }
         static void DisplayMenu()
         {
