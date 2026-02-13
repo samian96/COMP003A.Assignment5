@@ -7,20 +7,20 @@ namespace COMP003A.Assignment5
         static void Main(string[] args)
         {
             bool running = true;
-            do
+
+            DisplayMenu();
+
+            while (running)
             {
 
                 int mainValue = 15;
 
-                DisplayMenu();
-
                 Console.Write("Please enter your name: ");
                 string name = Console.ReadLine();
-                Console.WriteLine("\n");
 
                 Console.Write("Please enter your age: ");
                 string age = Console.ReadLine();
-                Console.WriteLine("\n");
+
 
                 Console.Write("Please enter a number: ");
                 string num1 = Console.ReadLine();
@@ -34,7 +34,7 @@ namespace COMP003A.Assignment5
                     int finalVal = DoubleCalculation(mainValue);
 
                     Console.WriteLine($"Original Value: {mainValue}.");
-                    Console.WriteLine("\n");
+
 
                     Console.WriteLine($"Original Value doubled: {finalVal}");
                     Console.WriteLine("\n");
@@ -45,9 +45,18 @@ namespace COMP003A.Assignment5
                     Console.WriteLine("\n");
                 }
 
-            } while (running == true);
+                Console.Write("Would you like to run the program again? y/n");
 
-            Console.WriteLine("Program ended");
+                string answer = Console.ReadLine();
+
+                if (answer != "yes" && answer != "y")
+                {
+                    running = false;
+                }
+                Console.WriteLine("");
+            }
+
+            Console.WriteLine("end of session");
 
         }
         static void DisplayMenu()
