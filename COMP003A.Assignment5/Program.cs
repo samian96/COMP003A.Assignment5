@@ -48,7 +48,7 @@ namespace COMP003A.Assignment5
                     Console.WriteLine("\n");
                 }
 
-                Console.Write("Would you like to run the program again? y/n");
+                Console.Write("Would you like to run the program again? y/n: ");
 
                 string answer = Console.ReadLine();
 
