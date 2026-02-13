@@ -30,5 +30,9 @@
         {
             Console.WriteLine($"Name: {inputName}. Age: {inputAge}.");
         }
+        static int CalculateTest (int num1, int num2)
+        {
+
+        }
     }
 }
