@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            int mainValue = 15;
+
             DisplayMenu();
 
             Console.Write("Please enter your name: ");
@@ -24,8 +26,6 @@
             Console.Write("Please enter a number: ");
             string num1= Console.ReadLine();
 
-            Console.Write("Please enter another number: ");
-            string num2 = Console.ReadLine();
         }
         static void DisplayMenu()
         {
@@ -35,7 +35,7 @@
         {
             Console.WriteLine($"Name: {inputName}. Age: {inputAge}.");
         }
-        static int CalculateTest (int num1, int num2)
+        static int DoubleCalculation (int inputNum1)
         {
 
         }
