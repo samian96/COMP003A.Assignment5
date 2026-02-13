@@ -12,14 +12,23 @@
             Console.Write("Please enter your age: ");
             string age = Console.ReadLine();
 
+            if (int.TryParse(age, out int inputAge))
+            {
+                UserInput(inputName, inputAge);
+            }
+            else
+            {
+                Console.WriteLine("Invalid number input.");
+            }
+
         }
         static void DisplayMenu()
         {
             Console.WriteLine("This is the introduction menu to this program.");
         }
-        static void UserInput(string name, int age)
+        static void UserInput(string inputName, int inputAge)
         {
-            
+            Console.WriteLine($"Name: {inputName}. Age: {inputAge}.");
         }
     }
 }
